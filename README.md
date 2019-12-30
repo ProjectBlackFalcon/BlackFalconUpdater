@@ -16,9 +16,13 @@ This is a proof-of-concept. It works and the scripts provide a somewhat of autom
 ## Usage
 
 To be able to run the launcher on a CLI-only server, you will have to create a fake X server with Xvfb.
-The launcher will then be launcher with the argument : `--remote-debugging-port=8315`. It is using the chrome devtools available in an electron app to enable the remote debugging.
+
+The launcher will then be started with the argument : `--remote-debugging-port=8315`. 
+It is using the chrome devtools available in an electron app to enable the remote debugging.
+
 You will then be able to access the launcher from http://localhost:8315.
-If you have a remote server and wish to access it from http://ip:8315, you can use a tunnel : https://www.cri.ensmp.fr/~coelho/tunnel.c : `./tunnel -Lr ip.of.the.server port localhost 8315`
+
+If you have a remote server and wish to access it from http://ip.of.the.server:port, you can use a [tunnel](https://www.cri.ensmp.fr/~coelho/tunnel.c) : `./tunnel -Lr ip.of.the.server port localhost 8315`
 
 ## License
 
